@@ -1,0 +1,13 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ hugo.Generator }}
+    {{ if .IsHome -}}
+    <title>{{ .Site.Title }}</title>
+    {{- else -}}
+    <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+    {{- end }}
+    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>

@@ -1,0 +1,30 @@
+{
+  "name": "fan.org.br",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss assets/css/styles.css -o static/css/styles.css",
+    "prod": "export NODE_ENV=production && postcss assets/css/styles.css -o static/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavomtborges/fan.org.br.git"
+  },
+  "keywords": [],
+  "author": "Gustavo Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavomtborges/fan.org.br/issues"
+  },
+  "homepage": "https://github.com/gustavomtborges/fan.org.br#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.4",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1"
+  }
+}

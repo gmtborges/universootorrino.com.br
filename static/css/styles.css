@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.menu-animated {
+  transition: transform 0.5s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -578,6 +582,7 @@ iframe,
 embed,
 object {
   display: block;
+  vertical-align: middle;
 }
 
 /**

@@ -1,27 +1,26 @@
-<div class="flex justify-between items-center py-2 bg-primary">
-    <a href="/" class="ml-4">
-        <img class="h-12" src="/img/logo-mono.svg" alt="Marca Universo Otorrino" />
-    </a>
-    <div class="flex items-center space-x-6">
-        <div class="flex space-x-4">
-            <a href="https://instagram.com/universootorrino" target="_blank" rel="noopener">
-                <img height="28" width="28" src="/img/instagram.svg" alt="Marca do instagram">
-            </a>
-            <a href="https://facebook.com/universootorrino" target="_blank" rel="noopener">
-                <img height="28" width="28" src="/img/facebook.svg" alt="Marca do instagram">
-            </a>
-
-        </div>
-        <div class="flex items-center">
-            <button class="mr-4">
-                <svg width="28" height="24" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="28" height="3" rx="1.5" fill="white" />
-                    <rect y="8.85715" width="28" height="3" rx="1.5" fill="white" />
-                    <rect y="17.7143" width="28" height="3" rx="1.5" fill="white" />
+<header>
+    <div class="flex justify-between items-center py-2 bg-primary">
+        <a href="{{ '/' | relURL }}" class="ml-4">
+            <img height="120" width="120" src="/img/logo-mono.svg" alt="Marca Universo Otorrino" />
+        </a>
+        <div class="flex mr-6">
+            <!-- Links redes sociais -->
+            <div class="flex ml-auto">
+                <a class="mr-4" href="https://instagram.com/universootorrino" target="_blank" rel="noopener">
+                    <img height="28" width="28" src="/img/instagram.svg" alt="Marca do instagram">
+                </a>
+                <a class="mr-6" href="https://facebook.com/universootorrino" target="_blank" rel="noopener">
+                    <img height="28" width="28" src="/img/facebook.svg" alt="Marca do instagram">
+                </a>
+            </div>
+            <!-- Menu mobile -->
+            <button aria-label="Menu Principal" onclick="toggleMenu()">
+                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="menu-top" class="menu-animated" width="24" height="2" fill="white" />
+                    <rect id="menu-middle" y="8" width="24" height="2" fill="white" />
+                    <rect id="menu-bottom" y="16" class="menu-animated" width="24" height="2" fill="white" />
                 </svg>
             </button>
         </div>
-
     </div>
-</div>
 </header>

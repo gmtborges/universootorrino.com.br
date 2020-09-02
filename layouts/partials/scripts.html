@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    function toggleMenu() {
+        const menuTop = document.getElementById("menu-top");
+        const menuMiddle = document.getElementById("menu-middle");
+        const menuBottom = document.getElementById("menu-bottom");
+
+        // Remove linha do meio do menu
+        if (menuMiddle.classList.contains('hidden')) {
+            menuMiddle.classList.remove('hidden');
+        } else {
+            menuMiddle.classList.add('hidden');
+        }
+
+        // Rotaciona linha de cima
+        if (menuTop.hasAttribute('y')) { // Menu aberto
+            menuTop.removeAttribute('y');
+            menuTop.removeAttribute('transform');
+            menuTop.classList.remove('menu-animated');
+        } else { // Menu fechado
+            menuTop.setAttribute('y', '16.9706');
+            menuTop.setAttribute('transform', 'rotate(-45 0 16.9706)');
+            menuTop.classList.add('menu-animated');
+        }
+
+        // Rotaciona linha de baixo
+        if (menuBottom.hasAttribute('x')) { // Menu aberto
+            menuBottom.removeAttribute('x');
+            menuBottom.removeAttribute('transform');
+            menuBottom.setAttribute('y', '16');
+            menuBottom.classList.remove('menu-animated');
+        } else { // Menu fechado
+            menuBottom.removeAttribute('y');
+            menuBottom.setAttribute('x', '1.41421');
+            menuBottom.setAttribute('transform', 'rotate(45 1.41421 0)');
+            menuBottom.classList.add('menu-animated');
+        }
+    }
+</script>

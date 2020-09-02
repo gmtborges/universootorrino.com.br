@@ -1,8 +1,12 @@
-<script type="text/javascript">
+<script type='text/javascript'>
     function toggleMenu() {
-        const menuTop = document.getElementById("menu-top");
-        const menuMiddle = document.getElementById("menu-middle");
-        const menuBottom = document.getElementById("menu-bottom");
+        // Menu
+        const menuSVG = document.getElementById('menu-svg');
+        const menuTop = document.getElementById('menu-top');
+        const menuMiddle = document.getElementById('menu-middle');
+        const menuBottom = document.getElementById('menu-bottom');
+        // Nav
+        const navMenu = document.getElementById('nav-menu');
 
         // Remove linha do meio do menu
         if (menuMiddle.classList.contains('hidden')) {
@@ -33,6 +37,15 @@
             menuBottom.setAttribute('x', '1.41421');
             menuBottom.setAttribute('transform', 'rotate(45 1.41421 0)');
             menuBottom.classList.add('menu-animated');
+        }
+
+        // Alterna navegação para aberta e fechada.
+        if (navMenu.classList.contains('hidden')) {
+            navMenu.classList.remove('hidden');
+            navMenu.classList.add('absolute');
+        } else {
+            navMenu.classList.add('hidden');
+            navMenu.classList.remove('absolute');
         }
     }
 </script>

@@ -1,9 +1,10 @@
-<header>
+<header class="">
     <div class="flex justify-between items-center py-2 bg-primary">
+        <!-- Logo -->
         <a href="/" class="ml-4">
             <img height="120" width="120" src="/img/logo-mono.svg" alt="Marca Universo Otorrino" />
         </a>
-        <!-- Conteúdo apenas da versão móvel. -->
+        <!-- Links redes socias e menu hambuger. Conteúdo apenas da versão móvel. -->
         <div class="flex items-center mr-4">
             <!-- Links redes sociais -->
             <div class="flex m-1 ml-auto">
@@ -14,18 +15,21 @@
                     <img height="28" width="28" src="/img/facebook.svg" alt="Marca do instagram">
                 </a>
             </div>
-            <!-- Menu versão móvel -->
+            <!-- Menu hamburger -->
             <button class="m-1 p-1" aria-label="Menu Principal" onclick="toggleMenu()">
                 <svg id="menu-svg" width="21" height="18" fill="none">
-                    <rect id="menu-top" class="menu-animated" width="24" height="2" fill="white" />
+                    <rect id="menu-top" class="transition-transform duration-300" width="24" height="2" fill="white" />
                     <rect id="menu-middle" y="8" width="24" height="2" fill="white" />
-                    <rect id="menu-bottom" y="16" class="menu-animated" width="24" height="2" fill="white" />
+                    <rect id="menu-bottom" y="16" class="transition-transform duration-300" width="24" height="2"
+                        fill="white" />
                 </svg>
             </button>
         </div>
     </div>
-    <nav id="nav-menu" class="hidden w-full py-2 bg-primary-500">
-        <ul class="flex flex-col items-center mt-2 font-serif text-xl text-gray-100">
+    <!-- Nav versão móvel -->
+    <nav id="nav-menu" style="background-color: rgba(36,60,80,0.95);"
+        class="absolute w-full py-2 opacity-0 transition-opacity duration-700 ease-in-out">
+        <ul class="flex flex-col items-center mt-2 font-serif text-xl font-semibold text-gray-100">
             <li class="mb-4">
                 <a href="#servicos">Serviços</a>
             </li>

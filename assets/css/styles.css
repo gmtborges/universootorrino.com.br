@@ -2,8 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-.menu-animated {
-    transition: transform 0.5s;
+hero-bg {
+    background-image: url('../img/hero-bg-xs.jpg');
+
 }
 
 @tailwind base;

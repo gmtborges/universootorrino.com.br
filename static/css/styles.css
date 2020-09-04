@@ -2,12 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu-animated {
-  transition: transform 0.5s;
-}
-
-.slide-down {
-  transition: opacity 0.4s ease-in-out;
+hero-bg {
+  background-image: url('../img/hero-bg-xs.jpg');
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

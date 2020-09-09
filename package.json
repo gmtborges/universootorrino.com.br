@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss assets/css/styles.css -o static/css/styles.css",
-    "prod": "export NODE_ENV=production && postcss assets/css/styles.css -o static/css/styles.css"
+    "start": "hugo server -D"
   },
   "repository": {
     "type": "git",
@@ -18,13 +17,18 @@
     "url": "https://github.com/gustavomtborges/fan.org.br/issues"
   },
   "homepage": "https://github.com/gustavomtborges/fan.org.br#readme",
-  "dependencies": {
-    "autoprefixer": "^9.8.4",
-    "tailwindcss": "^1.4.6"
-  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
     "postcss": "^7.0.32",
-    "postcss-cli": "^7.1.1"
-  }
+    "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.6.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }

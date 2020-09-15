@@ -5,10 +5,10 @@
 
 <body class="flex flex-col bg-gray-100 h-screen">
     {{ partial "header.html" . }}
-    <div class="flex-auto">
+    <div class="flex-auto overflow-y-auto">
         {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
     </div>
-    {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
 </body>
 

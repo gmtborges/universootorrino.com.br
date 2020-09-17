@@ -1,5 +1,16 @@
-hero-bg {
-    background-image: url('../img/hero-bg-xs.jpg');
-
+.bg-hero {
+    background-image: url('../img/bg-hero-sm.jpg');
 }
 
+@media(min-width: 640px) {
+    .bg-hero {
+        background-image: url('../img/bg-hero-md.jpg');
+
+    }
+}
+
+@media(min-width: 1024px) {
+    .bg-hero {
+        background-image: url('../img/bg-hero-lg.jpg');
+    }
+}

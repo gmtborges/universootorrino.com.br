@@ -1,8 +1,8 @@
 {{ define "main" -}}
 <section>
-    <div class="flex items-end justify-end h-64 w-full bg-hero bg-cover bg-no-repeat">
-        <span class="mb-6 mr-6"><a href="#"
-                class="py-2 px-3 bg-blue-500 font-semibold font-sans rounded-full text-gray-100">Marque
+    <div class="flex items-end justify-end bg-hero bg-cover bg-no-repeat">
+        <span class="mb-6 mr-6 md:mb-12"><a href="#"
+                class="py-2 px-3 bg-blue-500 font-bold text-lg font-sans rounded-full text-gray-100 md:text-xl md:px-4 md:py-3">Marque
                 sua
                 consulta</a>
         </span>
@@ -10,46 +10,51 @@
 </section>
 <section id="servicos" class="flex flex-col items-center m-4">
     <h1 class="my-2 font-sans text-2xl font-bold text-gray-800">Serviços</h1>
-    <div class="flex flex-col items-center my-4 p-4 bg-secondary rounded shadow-lg">
-        <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Atendimento Clínico</h3>
-        <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            eum, facere,
-            repellat
-            officia ut ipsa
-            voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
-        <div class="ml-auto mr-2 pt-4">
-            <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
-            </a>
+    <div class="flex flex-col items-center lg:flex-row">
+        <div class="flex flex-col items-center m-4 p-4 bg-secondary rounded shadow-lg max-w-lg">
+            <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Atendimento Clínico</h3>
+            <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cumque
+                eum, facere,
+                repellat
+                officia ut ipsa
+                voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
+            <div class="ml-auto mr-2 pt-4">
+                <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col items-center my-4 p-4 bg-secondary-300 rounded shadow-lg">
-        <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Exames</h3>
-        <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            eum, facere,
-            repellat
-            officia ut ipsa
-            voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
-        <div class="ml-auto mr-2 pt-4">
-            <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
-            </a>
+        <div class="flex flex-col items-center m-4 p-4 bg-secondary-300 rounded shadow-lg max-w-lg">
+            <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Exames</h3>
+            <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cumque
+                eum, facere,
+                repellat
+                officia ut ipsa
+                voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
+            <div class="ml-auto mr-2 pt-4">
+                <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="flex flex-col items-center my-4 p-4 bg-secondary-500 rounded shadow-lg">
-        <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Cirurgias</h3>
-        <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            eum, facere,
-            repellat
-            officia ut ipsa
-            voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
-        <div class="ml-auto mr-2 pt-4">
-            <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
-            </a>
+        <div class="flex flex-col items-center m-4 p-4 bg-secondary-500 rounded shadow-lg max-w-lg">
+            <h3 class="mb-2 font-sans font-semibold text-xl text-gray-100">Cirurgias</h3>
+            <p class="text-base text-gray-100 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Cumque
+                eum, facere,
+                repellat
+                officia ut ipsa
+                voluptatem doloribus odit magnam minus dolorem nostrum similique exercitationem.</p>
+            <div class="ml-auto mr-2 pt-4">
+                <a href=" /servicos" class="text-gray-100 uppercase font-semibold">Saiba mais...
+                </a>
+            </div>
         </div>
     </div>
 </section>
 <section id="sobre-nos" class="flex flex-col items-center m-4">
     <h1 class="my-2 font-sans text-2xl font-bold text-gray-800">Sobre Nós</h1>
-    <div class="flex flex-col rounded shadow-lg">
+    <div class="flex flex-col rounded shadow-lg max-w-lg">
         <img class="w-full" src="/img/sobre-nos.jpg" alt="Mariana e Mayara">
         <div class="p-4">
             <p class="text-base text-gray-800 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit.

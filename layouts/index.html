@@ -8,7 +8,7 @@
         </span>
     </div>
 </section>
-<section id="servicos" class="flex flex-col items-center m-4">
+<section id="servicos" class="flex flex-col items-center p-4">
     <h1 class="my-2 font-sans text-2xl font-bold text-gray-800">Serviços</h1>
     <div class="flex flex-col items-center lg:flex-row">
         <div class="flex flex-col items-center m-4 p-4 bg-secondary rounded shadow-lg max-w-lg">
@@ -52,7 +52,7 @@
         </div>
     </div>
 </section>
-<section id="sobre-nos" class="flex flex-col items-center m-4">
+<section id="sobre-nos" class="flex flex-col items-center p-4 mb-10">
     <h1 class="my-2 font-sans text-2xl font-bold text-gray-800">Sobre Nós</h1>
     <div class="flex flex-col rounded shadow-lg max-w-lg">
         <img class="w-full" src="/img/sobre-nos.jpg" alt="Mariana e Mayara">
@@ -69,7 +69,24 @@
         </div>
     </div>
 </section>
-<section id="posts" class="flex flex-col items-center m-4">
+<section id="publicacoes" class="flex flex-col items-center p-4 bg-gray-200">
     <h1 class="my-2 font-sans text-2xl font-bold text-gray-800">Útimas publicações</h1>
+    {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+    <article class="flex flex-col m-4 rounded shadow max-w-lg bg-gray-100">
+        {{ if .Params.featured_image }}
+        <img{{ with .Params.featured_image }} src="{{ . }}" {{ end }} alt="{{ .Title }}">
+            {{ end }}
+            <div class="pt-4 px-4 pb-2">
+                <a href="{{ .RelPermalink }}" class="font-sans font-bold text-lg text-gray-800">{{ .Title }}</a>
+                <p class="mt-4 text-base text-gray-800 text-justify">{{ .Summary }}</p>
+            </div>
+            {{ if .Truncated }}
+            <div class="ml-auto mr-4 py-2 px-2">
+                <a href="{{ .RelPermalink }}" class="text-gray-800 uppercase font-semibold">Saiba mais...
+                </a>
+            </div>
+            {{ end }}
+    </article>
+    {{ end }}
 </section>
 {{- end }}
